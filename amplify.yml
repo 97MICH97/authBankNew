@@ -10,7 +10,7 @@ frontend:
       commands: 
         -npm run build
   artifacts:
-    baseDirectory: ./bankapp/build
+    baseDirectory: ./build
     files:
       - '**/*'
   cache:
