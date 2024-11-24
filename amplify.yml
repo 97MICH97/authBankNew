@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd bankapp
         - npm ci
     # IMPORTANT - Please verify your build commands
     build:
