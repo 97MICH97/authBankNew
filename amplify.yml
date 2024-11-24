@@ -3,13 +3,14 @@ frontend:
   phases:
     preBuild:
       commands:
+        - cd bankapp
         - npm ci
     # IMPORTANT - Please verify your build commands
     build:
       commands: 
         -npm run build
   artifacts:
-    baseDirectory: /bankapp/build
+    baseDirectory: ./bankapp/build
     files:
       - '**/*'
   cache:
