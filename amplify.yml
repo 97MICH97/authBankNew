@@ -1,20 +1,20 @@
 version: 1
-# frontend:
-#   phases:
-#     preBuild:
-#       commands:
-#         - npm ci
-#     # IMPORTANT - Please verify your build commands
-#     build:
-#       commands: 
-#         -npm run build
-#   artifacts:
-#     baseDirectory: dist
-#     files:
-#       - '**/*'
-#   cache:
-#     paths:
-#       - .npm/**/*
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands: 
+        -npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .npm/**/*
 backend:
   phases:
     build:
