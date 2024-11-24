@@ -1,9 +1,15 @@
 version: 1
+variables: 
+  BUILD_FOLDER: app
+  OUTPUT_FOLDER: dist
 frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - cd ${BUILD_FOLDER}
+        - mkdir ./${OUTPUT_FOLDER}
+        - npm install
+        - npm audit fix
     # IMPORTANT - Please verify your build commands
     build:
       commands: 
