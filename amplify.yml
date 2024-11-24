@@ -6,9 +6,9 @@ frontend:
         - npm ci --cache .npm --prefer-offline
     # IMPORTANT - Please verify your build commands
     build:
-      commands: []
+      commands: -npx nodemon app
   artifacts:
-    baseDirectory: build
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
